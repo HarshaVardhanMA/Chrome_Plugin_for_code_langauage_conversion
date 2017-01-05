@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head><title>Code Language Translator: Select Language</title>
+
+<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  
+
+  <style>
+.alignleft
+{
+  float:left;
+  margin-right:10px;
+  margin-bottom:10px;
+  clear:both;
+}
+.alignright
+{
+  float:right;
+  margin-left:10px;
+  margin-bottom:10px;
+  clear:right;
+}
+
+.alignnone
+{
+  clear:both;
+  display:block;
+  margin:0 auto;
+}
+
+h5
+{
+  clear:both;
+  padding-top:2em;
+  color:#D14;
+  font-size: 18px;
+  font-weight: normal;
+}
+a{
+  color: "#2196f3" 
+}
+
+  </style>
+
+  
+
+</head>
+<body>
+  <div class="container"><div class="span12">
+
+  <h3>Code Language Translator</h3>
+  <h4>Languages</h4>
+<hr />
+
+  <div class="input-field col s12" id="dropdown">
+    <select id="mySelect">
+      <option value="1" selected>Hindi</option>
+      <option value="2" selected>Hindi_original</option>
+	  <option value="3">Spanish</option>
+      <option value="4">French</option>
+    </select>
+    <!-- <a class="waves-effect waves-light btn"  id="button">Convert</a>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <option value="" disabled selected>Choose your Language</option>
+      <script>
+function pasteSelection() {
+  chrome.tabs.getSelected(null, function(tab) {
+    chrome.tabs.sendRequest(tab.id, {method: "getSelection"}, function (response) {
+      var text = document.getElementById('text'); 
+      text.innerHTML = response.data;
+    });
+  });
+}
+</script>
+  -->
+  </div>
+  <label for="button">you could have a button</label>
+   <button  id="button">Convert</button>
+  <script  src="popup.js" ></script>
+</div>
+</body>
+</html>
+
+
+    

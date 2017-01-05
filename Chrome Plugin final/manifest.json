@@ -1,0 +1,32 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon1.png",
+      "default_title": "Language Translator",
+     "default_popup": "popup/popup.html"
+   },
+   "commands": {
+      "duplicate-tab-keyboard-shortcut": {
+         "description": "Language Translator"
+      }
+   },
+   "permissions": [
+    "http://*/",
+    "tabs",
+    "storage"
+  ],
+  "web_accessible_resources": ["/config_resources/config.json"] ,
+   "description": "Adds a shortcut key to allow duplicating a tab.",
+   "icons": {
+      "64": "icon1.png"
+   },
+  
+   "manifest_version": 2,
+   "minimum_chrome_version": "25",
+   "name": "Language Translator",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "*://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}
